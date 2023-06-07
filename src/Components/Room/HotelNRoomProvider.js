@@ -4,7 +4,7 @@ export const HotelNRoomContext = createContext();
 
 export const HotelNRoomProvider = ({ children }) => {
   const [roomId, setRoomId] = useState(null);
-  const [hotelId, setHotelId] = useState("");
+  const [hotelId, setHotelId] = useState("6480425050d748f5bb7a5771");
 
   const updateRoomId = (id) => {
     setRoomId(id);

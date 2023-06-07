@@ -37,18 +37,20 @@ const Signin = () => {
 
       if (response.ok) {
         const { user, token, hotelId } = data;
-
+        console.log(hotelId)
         setHotelId(hotelId)
+        //setting the hotel id 
+        
         
         // Save token and user ID in local storage
         localStorage.setItem('token', token);
         localStorage.setItem('userId', user._id);
-
+        
         setSuccess('User logged in successfully');
         setError('');
         // Perform any additional actions upon successful login
 
-        navigate('/hotel/rooms')
+        navigate('/Inventory')
 
       } else {
         setError(data.Message);
