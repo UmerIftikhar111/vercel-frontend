@@ -5,7 +5,7 @@ const DisplayOrdersModal = ({ show, onHide, orders }) => {
   
     const fetchSpecificItem = async (itemId) => {
         try {
-          const response = await fetch(`http://localhost:3001/inventory/get-specific-item?id=${itemId}`);
+          const response = await fetch(`https://vercel-backend-gilt.vercel.app/inventory/get-specific-item?id=${itemId}`);
           const data = await response.json();
           alert(" Item Name : "+data.name+ " | Description : "+data.description);
         } catch (error) {
