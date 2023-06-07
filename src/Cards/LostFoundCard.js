@@ -18,7 +18,7 @@ const LostItemCard = ({ lostItem, onRemoveItem }) => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('http://localhost:3001/lostAndfound/return-item', {
+      const response = await fetch('https://vercel-backend-gilt.vercel.app/lostAndfound/return-item', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

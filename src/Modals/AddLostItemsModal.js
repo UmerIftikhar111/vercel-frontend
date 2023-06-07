@@ -21,7 +21,7 @@ const AddLostItemsModal = ({ show, onClose, onAdd }) => {
 
   const handleAddItem = () => {
     
-    if(!name==="" && !description=="" && !location==="")
+    if(true)
       onAdd(name, description, location);
     else
       alert("Error")
